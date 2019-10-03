@@ -6,22 +6,22 @@ public class NodeTester {
     public static void main(String[] args) throws Exception {
 
         Scanner file = new Scanner(new File("actor.dat"));
-        Actor head = new Actor(file.nextLine());
+        Node head = new Node(new Actor(file.nextLine()));
 
         while (file.hasNext()){
-            Actor newActor = new Actor(file.nextLine());
-            newActor.setNextPtr(head);
-            head = newActor;
+            Node newNode = new Node(new Actor(file.nextLine()));
+            newNode.setNextPtr(head);
+            head = newNode;
         }
 
-        Actor current = head;
+        Node current = head;
 
         while (current != null){
-            System.out.println(current.getName());
+            System.out.println(current.get());
             current = current.getNextPtr();
         }
 
-        System.out.println(head);
+        System.out.println(((Actor) head.get()).getName());
 
     }
 

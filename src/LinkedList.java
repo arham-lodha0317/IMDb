@@ -9,6 +9,7 @@ public class LinkedList {
 
     public void add(Object object){
         Node node = new Node(object);
+        node.setNextPtr(head);
         head = node;
         count++;
     }
@@ -27,8 +28,6 @@ public class LinkedList {
     }
 
     public int size() {
-        return count + 1;
+        return count;
     }
-
-
 }

@@ -1,5 +1,5 @@
 
-public class Movie {
+public class Movie{
 
     private int date;
     private String title;
@@ -78,4 +78,5 @@ public class Movie {
 
         return dateString + titleString + actorString + directorString;
     }
+
 }

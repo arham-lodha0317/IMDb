@@ -14,6 +14,10 @@ public class LinkedList {
         count++;
     }
 
+    public Node getHead() {
+        return head;
+    }
+
     public Node get(int index){
         if(index < 0 || index >= count){
             return null;
@@ -30,4 +34,6 @@ public class LinkedList {
     public int size() {
         return count;
     }
+
+
 }

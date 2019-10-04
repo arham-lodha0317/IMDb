@@ -1,5 +1,4 @@
 import java.io.File;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -44,7 +43,7 @@ public class ListTester {
         }
 
         for (int i = 0; i < movies.size(); i++) {
-            System.out.println(movies.get(i).get());
+            System.out.println(movies.get(i));
         }
 
         System.out.println();
